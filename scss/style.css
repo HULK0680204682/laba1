@@ -1,0 +1,80 @@
+body {background-color:#ADFF2F;}
+
+h1 {
+	font-family: arial, verdana, sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	color:#000000;
+	font-style: italic;
+	text-align: center;
+	text-shadow:0 0 0.2em #FFFFFF, 0 0 0.2em #FFFFFF;
+}
+
+p {
+	font-family: arial, verdana, sans-serif;
+	font-size: 20px;
+	color: 	#006400;
+	text-shadow:0 0 0.5em #FFD700;
+	text-align: justify;
+}
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	margin: 0;
+}
+
+#main {
+	display: flex;
+	flex: 1;
+}
+
+#main > article {
+	flex: 1;
+}
+#main > nav, 
+#main > aside {
+	flex: 0 0 20vw;
+	background: article;
+}
+#main > nav {
+	order: -1;
+}
+header, footer {
+	background: yellowgreen;
+	height: 20vh;
+	
+}
+header {
+	background-image: url(https://static.espreso.tv/uploads/article/2792749/images/im-1-seym.jpg);
+	
+}
+header, footer, article, nav, aside {
+	padding: 1em;
+}
+.menu {
+	width: 260px;
+}
+.menu a {
+	background-color: #FFA07A;
+	color: #008000;
+	display: block;
+	padding: 12px;
+	text-decoration: none;
+	font-family: arial, verdana, sans-serif;
+	font-size: 20px;
+}
+.menu a:hover {
+	background-color: #00FF00;
+}
+.menu a.active {
+	background-color: #800000;
+	color: white;
+}
+footer {
+	text-align: center;
+}
